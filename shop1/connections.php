@@ -2,7 +2,7 @@
   
     $server="eu-cdbr-west-02.cleardb.net"; 
     $user="be1251cea96efe"; 
-    $pass="f9393f52@"; 
+    $pass="f9393f52"; 
     $db="heroku_421c90367cd9a12"; 
       
     // connect to mysql 
