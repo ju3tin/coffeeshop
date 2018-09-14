@@ -58,8 +58,8 @@
 					}
 					
 					$sql=substr($sql, 0, -1).") ORDER BY name ASC";
-					$query=mysql_query($sql);
-					while($row=mysql_fetch_array($query)){
+					$query=mysqli_query($sql);
+					while($row=mysqli_fetch_array($query)){
 						
 					?>
 						<p><?php echo $row['name'] ?> x <?php echo $_SESSION['cart'][$row['id_product']]['quantity'] ?></p>

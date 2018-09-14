@@ -36,9 +36,9 @@
 					}
 					
 					$sql=substr($sql, 0, -1).") ORDER BY name ASC";
-					$query=mysql_query($sql);
+					$query=mysqli_query($sql);
 					$totalprice=0;
-					while($row=mysql_fetch_array($query)){
+					while($row=mysqli_fetch_array($query)){
 						$subtotal=$_SESSION['cart'][$row['id_product']]['quantity']*$row['price'];
 						$totalprice+=$subtotal;
 					?>
